@@ -15,6 +15,9 @@ requirejs.config({
 
 console.log("main.js");
 
-require(["viewModels/myViewModel", "helper/utils"], function(ko, utils) {
-	utils.log("Ricardo");
+define(function(require) {
+    var ko = require("viewModels/myViewModel");
+    var utils = require("helper/utils");
+
+    utils.log("Ricardo");
 });
