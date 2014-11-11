@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Sample Project with RequireJS and Ko Components</title>
+        <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script data-main="scripts/main" src="scripts/require.js"></script>
+    </head>
+    <body>
+        <h1>My Sample Project with RequireJS and Ko Components</h1>
+
+        <ul data-bind="foreach: products">
+		    <li class="product">
+		        <like-widget params="value: userRating"></like-widget>
+		    </li>
+		</ul>
+    </body>
+</html>
